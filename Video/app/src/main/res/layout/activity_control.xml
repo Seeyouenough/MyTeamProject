@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bairuitech.ControlActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_ll_control"
+        android:orientation="vertical"
+        android:background="#f0ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <com.bairuitech.RockerView
+            android:id="@+id/rockerView1"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:id="@+id/rel_two"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/text_receive"
+                android:hint="显示信息"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_three"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_two">
+
+
+            <Button
+                android:id="@+id/bt_start"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音操作" />
+
+            <Button
+                android:id="@+id/bt_voice_start"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bt_start"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开声音" />
+
+            <Button
+                android:id="@+id/bt_voice_stop"
+                android:layout_below="@+id/bt_voice_start"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭声音" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/id_sv_watch"
+        android:layout_above="@id/id_ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

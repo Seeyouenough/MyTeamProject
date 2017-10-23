@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\applications -I .\devices -I .\drivers -I .\lib\inc -I .\core -I .\obj -I ..\FC32_Flight -I .\misc
+-IC:\Users\WangYJ\Desktop\»úÐµ±Û\RTE
+-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-ID:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\obj\device_flysky.o --omf_browse .\obj\device_flysky.crf --depend .\obj\device_flysky.d "devices\device_flysky.c"

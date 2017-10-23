@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wdtx.teset.ControlActivity">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/id_ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/id_btn_msg1"
+            android:text="消息1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/id_btn_msg2"
+            android:text="消息2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/id_btn_msg3"
+            android:text="消息3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/id_btn_msg4"
+            android:text="消息4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/id_sv_watch"
+        android:layout_above="@id/id_ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
